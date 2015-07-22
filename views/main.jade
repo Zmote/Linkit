@@ -1,0 +1,40 @@
+doctype html
+html
+    head(lang='en')
+        meta(charset='UTF-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Linkit - by Zafer Dogan
+        script(src='../javascripts/handlebars-v3.0.3.js')
+        script(src='../javascripts/jQuery.js')
+        script(src='../javascripts/behaviour_clientSide.js')
+        link(rel='stylesheet', href='../stylesheets/main_style.css')
+    body
+        div#siteWrapper
+            #error
+            label#new_link New Link
+            input#input_field(type='text', placeholder='Enter your URL here http://...')
+            button#post_button(value='Post New Link') Post New Link
+            #log_area
+                label#user_name Zafer Dogan
+                button#login Login
+            #messages
+            script(type='text/x-handlebars-template')#clientTemplate.
+                <div id="message_cont">
+                    {{#each this}}
+                        <div class="message_entry">
+                            <div class="votes">
+                                <img class="arrow_vote up" src="../images/arrow-up.png">
+                                <div class="vote_counter">{{counter}}</div>
+                                <img class="arrow_vote down" src="../images/arrow-down.png">
+                            </div>
+                            <div class="message_container">
+                                <div class="message_header">Funny Website <a href={{url}} target="_blank">{{title}}</a></div>
+                                <div class="message_content">Hey, check out this Funny Website, dudes!</div>
+                                <div class="message_footer">Created by <div class="user">{{user}}</div> <span class="time"></span> ago</div>
+                            </div>
+                            <input class="deleteButton" type="button" value="Delete">
+                        </div>
+                     {{/each}}
+                </div>
+
+

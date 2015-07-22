@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Linkit - by Zafer Dogan</title>
+    <script src="../public/javascripts/handlebars-v3.0.3.js"></script>
+    <script src="../public/javascripts/jQuery.js"></script>
+    <script src="../public/javascripts/behaviour_clientSide.js"></script>
+    <link rel="stylesheet" href="../public/stylesheets/main_style.css" />
+</head>
+<body>
+<label id="new_link">New Link</label>
+<input type="text" id="input_field" placeholder="Enter your URL here">
+<button id="post_button" value="Post New Link">Post New Link</button>
+<div id="log_area">
+    <label id="user_name">Zafer Dogan</label><button id="login">Login</button>
+</div>
+<div id="messages">
+    <!-- These #message_entry's div's will be created by template and added according to available messages-->
+    <div class="message_entry">
+        <div class="votes">
+            <img class="arrow_vote up" src="../public/images/arrow-up.png">
+            <div class="vote_counter">0</div>
+            <img class="arrow_vote down" src="../public/images/arrow-down.png">
+        </div>
+
+        <div class="message_container">
+            <div class="message_header">Funny Website <a href="http://www.20min.ch">www.20min.ch</a></div>
+            <div class="message_content">Hey, check out this Funny Website, dudes!</div>
+            <div class="message_footer">Created by Zafer Dogan <span>1 Hour ago</span></div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+<div id="message_cont">
+    {{#each this}}
+    <div class="message_entry">
+        <div class="votes">
+            <img class="arrow_vote up" src="../images/arrow-up.png">
+            <div class="vote_counter">0<div>
+                <img class="arrow_vote down" src="../images/arrow-down.png">
+            </div>
+                <div class="message_container">
+                    <div class="message_header">
+                        <span>Funny Website</span>
+                        <a href="{{url}}">{{title}}</a>
+                    </div>
+                    <div class="message_content">Hey, check out this Funny Website, dudes!</div>
+                    <div class="message_footer">Created by {{user}}<span>{{date}} ago</span></div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+<!--
+jade backup code:
+.message_entry
+                .votes
+                    img.arrow_vote.up(src='../images/arrow-up.png')
+                    .vote_counter 0
+                    img.arrow_vote.down(src='../images/arrow-down.png')
+                .message_container
+                    .message_header
+                        | Funny Website &nbsp
+                        a(href='http://www.20min.ch') www.20min.ch
+                    .message_content Hey, check out this Funny Website, dudes!
+                    .message_footer
+                        | Created by Zafer Dogan
+                        span 1 Hour ago
+-->

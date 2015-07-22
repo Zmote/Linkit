@@ -1,0 +1,194 @@
+*{
+    box-sizing:border-box;
+}
+.time{
+    text-decoration:underline;
+    color:lightcoral;
+}
+*:focus {
+    outline: 0;
+}
+.user{
+    display:inline-block;
+}
+.deleteButton{
+    opacity:0.5;
+    float:right;
+    outline:none;
+    position:relative;
+    top:50px;
+    height:50px;
+    width:100px;
+    background-color:white;
+    color:lightgrey;
+    font-size:1em;
+    border:1px solid lightgrey;
+}
+.deleteButton:hover{
+    opacity:1;
+    border:none;
+    color:white;
+    background-color:#e16052;
+}
+.deleteButton:active{
+    background-color:darkred;
+}
+#input_field{
+    float:left;
+    height:50px;
+    width:600px;
+    padding:10px;
+    font-size:1.8em;
+    border: 1px solid grey;
+    backround-color: white;
+    transition: border, background-color 0.4s ease-in;
+    -ms-transition: border, background-color 0.4s ease-in;
+    -moz-transition: border, background-color 0.4s ease-in;
+    -webkit-transition: border, background-color 0.4s ease-in;
+}
+#input_field.warn{
+    border:1px solid red;
+    background-color: #ffd8c7;
+    opacity: 1;
+    transition: border, background-color 0.4s ease-out;
+    -ms-transition: border, background-color 0.4s ease-out;
+    -moz-transition: border, background-color 0.4s ease-out;
+    -webkit-transition: border, background-color 0.4s ease-out;
+}
+#post_button{
+    float:left;
+    position:relative;
+    left:20px;
+    height:50px;
+    width:180px;
+    font-size:1.1em;
+    font-weight:bold;
+    color:white;
+    background-color: #e16052;
+}
+#log_area{
+    float:right;
+    font-size:1.5em;
+}
+#login{
+    float:left;
+    height:50px;
+    width:120px;
+    font-size:inherit;
+    background-color:black;
+    color:white;
+    font-family:Verdana;
+}
+#user_name{
+    float:left;
+    padding:10px;
+    font-size:inherit;
+    margin-right:20px;
+    font-family:Verdana;
+}
+#new_link{
+    margin-right:10px;
+    float:left;
+    padding:10px;
+    font-size:1.5em;
+    color: #848484;
+    font-family:Verdana;
+}
+a{
+    display:inline-block;
+    width:420px;
+    font-size:0.9em;
+    overflow:hidden;
+}
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 80%;
+    -webkit-text-size-adjust: 100%;
+}
+#messages{
+    padding:20px 10px;
+    clear:left;
+    float:left;
+    font-size:1.5em;
+    font-family:Verdana;
+    width:100%;
+}
+.message_entry{
+    margin-top:10px;
+    margin-bottom:5px;
+    width:930px;
+    float:left;
+    clear:both;
+    padding:inherit;
+    border-bottom: 1px solid grey;
+}
+#siteWrapper{
+    padding:3% 5%;
+    min-width:1400px;
+    width:100%;
+    font-size: 1em;
+}
+.votes{
+    float:left;
+}
+.arrow_vote{
+    width:40px;
+    height:40px;
+}
+.arrow_vote.up:hover{
+    content: url("../images/arrow-up_hover.png");
+}
+.arrow_vote.up:active{
+    content: url('../images/arrow-up_clicked.png');
+}
+.arrow_vote.down:hover{
+    content: url("../images/arrow-down_hover.png");
+}
+.arrow_vote.down:active{
+    content: url('../images/arrow-down_clicked.png');
+}
+.message_container{
+    padding-left: 80px;
+    float:left;
+}
+.vote_counter{
+    padding:12px;
+}
+.message_content{
+    padding-bottom: 25px;
+}
+.message_header{
+    font-weight:bold;
+    padding-bottom: 25px;
+}
+.message_footer{
+    color:grey;
+    padding-bottom: 25px;
+    font-size:0.8em;
+}
+
+#error{
+    opacity:0;
+    width:0%;
+    height:0;
+    transition: opacity, width, height, background-color 1s ease-out;
+    -ms-transition: opacity, width, height, background-color 1s ease-out;
+    -moz-transition: opacity, width, height, background-color 1s ease-out;
+    -webkit-transition: opacity, width, height, background-color 1s ease-out;
+}
+
+#error.warn{
+    opacity:1;
+    width:100%;
+    color:white;
+    padding:10px;
+    text-align:center;
+    font-size:1.5em;
+    font-family:Verdana;
+    height:50px;
+    background-color:red;
+    transition: opacity, width, height, background-color 1s ease-out;
+    -ms-transition: opacity, width, height, background-color 1s ease-out;
+    -moz-transition: opacity, width, height, background-color 1s ease-out;
+    -webkit-transition: opacity, width, height, background-color 1s ease-out;
+}

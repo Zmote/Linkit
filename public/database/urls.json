@@ -1,0 +1,67 @@
+[
+    {
+        "title": "http://www.samanyoluhaber.com",
+        "id": "zafer1437563976360",
+        "positive[]": [
+            "System_Zafer",
+            "System_Cemil"
+        ],
+        "negative[]": [
+            "System_Niyazi",
+            "System_Dogan"
+        ],
+        "counter": "0",
+        "url": "http://www.samanyoluhaber.com",
+        "user": "Zafer",
+        "date": "1437563976360"
+    },
+    {
+        "title": "http://www.20min.ch",
+        "id": "zafer1437563265850",
+        "positive[]": [
+            "System_Zafer",
+            "System_Cemil",
+            "Zafer"
+        ],
+        "negative[]": [
+            "System_Niyazi",
+            "System_Dogan"
+        ],
+        "counter": 1,
+        "url": "http://www.20min.ch",
+        "user": "Zafer",
+        "date": "1437563265850"
+    },
+    {
+        "title": "http://deviantart.com",
+        "id": "zafer1437563227535",
+        "positive[]": [
+            "System_Zafer",
+            "System_Cemil"
+        ],
+        "negative[]": [
+            "System_Niyazi",
+            "System_Dogan"
+        ],
+        "counter": "0",
+        "url": "http://deviantart.com",
+        "user": "Zafer",
+        "date": "1437563227535"
+    },
+    {
+        "title": "http://zaman.com.tr",
+        "id": "zafer1437559733556",
+        "positive[]": [
+            "System_Zafer",
+            "System_Cemil"
+        ],
+        "negative[]": [
+            "System_Niyazi",
+            "System_Dogan"
+        ],
+        "counter": 0,
+        "url": "http://zaman.com.tr",
+        "user": "Zafer",
+        "date": "1437559733556"
+    }
+]
