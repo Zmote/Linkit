@@ -1,17 +1,20 @@
 var express = require('express');
 var router = express.Router();
-var db = require("../database.js");
+var db = require("../public/dbscripts/database.js");
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('main', { title: 'Express' });
+  if(!req.session.anySessionContent){
+    res.render('main');
+  }else{
+    res.render('main', {username: req.session.anySessionContent});
+  }
 });
 
-/* POST to database */
+/* PUT to database */
 router.put('/Links', function(req,res){
   if(db.validateURL(req.body)){
     db.saveLink(req.body);
-    console.log("Position marker");
     res.status(200).send('Everything went OK');
   }else{
     res.status(500).send({message:"Server Responds: Invalid URL"});
@@ -42,6 +45,12 @@ router.get('/Links', function(req,res){
   db.readFromDBFile(function(data){
     res.send(data);
   })
+});
+
+/* POST logout */
+router.get('/logout',function(req,res){
+  req.session.anySessionContent = null;
+  res.status(200).send('Logged out user');
 });
 
 module.exports = router;

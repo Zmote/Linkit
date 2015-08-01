@@ -1,67 +1,59 @@
 [
     {
-        "title": "http://www.samanyoluhaber.com",
-        "id": "zafer1437563976360",
-        "positive[]": [
+        "title": "http://warsaw.de",
+        "id": "Zmote891438382017214",
+        "positive": [
             "System_Zafer",
             "System_Cemil"
         ],
-        "negative[]": [
+        "negative": [
             "System_Niyazi",
-            "System_Dogan"
+            "System_Dogan",
+            "niyazi"
         ],
-        "counter": "0",
-        "url": "http://www.samanyoluhaber.com",
-        "user": "Zafer",
-        "date": "1437563976360"
+        "counter": -1,
+        "url": "http://warsaw.de",
+        "user": "Zmote89",
+        "date": "1438382017214"
     },
     {
-        "title": "http://www.20min.ch",
-        "id": "zafer1437563265850",
-        "positive[]": [
+        "title": "http://deviantart.de",
+        "id": "cemil1438380743118",
+        "positive": [
             "System_Zafer",
             "System_Cemil",
-            "Zafer"
+            "cemil",
+            "Zafer",
+            "Zmote89",
+            "niyazi"
         ],
-        "negative[]": [
+        "negative": [
             "System_Niyazi",
             "System_Dogan"
         ],
-        "counter": 1,
-        "url": "http://www.20min.ch",
-        "user": "Zafer",
-        "date": "1437563265850"
+        "counter": 4,
+        "url": "http://deviantart.de",
+        "user": "cemil",
+        "date": "1438380743118"
     },
     {
-        "title": "http://deviantart.com",
-        "id": "zafer1437563227535",
-        "positive[]": [
+        "title": "http://www.lolimaholi.org",
+        "id": "Zafer1438168713298",
+        "positive": [
             "System_Zafer",
-            "System_Cemil"
+            "System_Cemil",
+            "Zafer",
+            "cemil"
         ],
-        "negative[]": [
+        "negative": [
             "System_Niyazi",
-            "System_Dogan"
-        ],
-        "counter": "0",
-        "url": "http://deviantart.com",
-        "user": "Zafer",
-        "date": "1437563227535"
-    },
-    {
-        "title": "http://zaman.com.tr",
-        "id": "zafer1437559733556",
-        "positive[]": [
-            "System_Zafer",
-            "System_Cemil"
-        ],
-        "negative[]": [
-            "System_Niyazi",
-            "System_Dogan"
+            "System_Dogan",
+            "Zmote89",
+            "niyazi"
         ],
         "counter": 0,
-        "url": "http://zaman.com.tr",
+        "url": "http://www.lolimaholi.org",
         "user": "Zafer",
-        "date": "1437559733556"
+        "date": "1438168713298"
     }
 ]

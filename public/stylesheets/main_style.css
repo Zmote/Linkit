@@ -79,6 +79,15 @@
     color:white;
     font-family:Verdana;
 }
+#logout{
+    float:left;
+    height:50px;
+    width:120px;
+    font-size:inherit;
+    background-color:black;
+    color:white;
+    font-family:Verdana;
+}
 #user_name{
     float:left;
     padding:10px;

@@ -6,17 +6,24 @@ html
         title Linkit - by Zafer Dogan
         script(src='../javascripts/handlebars-v3.0.3.js')
         script(src='../javascripts/jQuery.js')
-        script(src='../javascripts/behaviour_clientSide.js')
+        script(src='../javascripts/behaviour.js')
         link(rel='stylesheet', href='../stylesheets/main_style.css')
     body
         div#siteWrapper
             #error
             label#new_link New Link
-            input#input_field(type='text', placeholder='Enter your URL here http://...')
+            if username
+                input#input_field(type='text', placeholder='Enter your URL here http://...')
+            else
+                input#input_field(type='text', placeholder='Only registered users can post and vote!')
             button#post_button(value='Post New Link') Post New Link
             #log_area
-                label#user_name Zafer Dogan
-                button#login Login
+                if username
+                    label#user_name= username
+                    button#logout Logout
+                else
+                    label#user_name Guest
+                    button#login Login
             #messages
             script(type='text/x-handlebars-template')#clientTemplate.
                 <div id="message_cont">
